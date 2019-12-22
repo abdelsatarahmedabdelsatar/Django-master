@@ -1,0 +1,43 @@
+{% extends 'mypf/base.html' %}
+<!--extended the base html file-->
+
+<!--adding content-->
+{% block content %}
+
+<div class="container">
+
+        <center><h1 class="mb-0" data-aos="fade-down" data-aos-duration="1200" style="color: snow;margin-top: 50px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 60px;">contact Us </h1></center>
+    <div class="row" style="margin-left:55px ;">
+        <div class="col-sm-6 mx-auto">
+            <!--Contact Form-->
+            <form class="margin" data-aos="fade-up" data-aos-duration="1200" action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group row">
+                    
+                    <div class="col-10">
+                        <input name="email" type="email" class="form-control" id="emailinput" placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="form-group row">
+                
+                    <div class="col-5">
+                            <input placeholder="phone" name="phone" type="text" class="form-control" id="phoneinput">
+                        </div>
+                    <div class="col-5">
+                        <input placeholder="subject" name="subject" type="text" class="form-control" id="subjectinput">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    
+                    <div class="col-10">
+                        <textarea name="message" class="form-control" id="messageinput" placeholder="Message...."></textarea>
+                    </div>
+                </div>
+                <div class="pull-righ">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

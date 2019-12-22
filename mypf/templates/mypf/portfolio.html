@@ -1,0 +1,87 @@
+{% extends 'mypf/base.html' %}
+<!--Extended base html file-->
+
+{% block content %}
+	<!--Header-->
+	
+	<header class="masthead text-white text-center">
+	  <div class="container">
+		<img data-aos="zoom-in" data-aos-duration="1500" class="img-fluid mb-5 d-block mx-auto im" style="border-radius: 250px; width: 300px; height: 300px;" src="static/mypf/img/abdelsatar.jpg" alt="abdelsatar Photo">
+		<h1 class="mb-0">Name: Abdelsatar Ahmed</h1>
+		<hr class="s">
+		<h2 class="font-weight-light mb-0">Web Programming - Python - Django - Front end</h2>
+	  </div>
+	</header>
+
+	<!--PORTFOLIO-->
+	<section class="portfolio margin" id="portfolio">
+        <div	 class="container">
+            <h2 class="text-center text-uppercase text-white mb-0">Profile</h2>
+            <hr class="s">
+			<div class="row">
+			  <div class="col-sm-6">
+				<div class="card">
+				  <div class="card-body">
+					<h5 class="card-title">First Project (basic programming)</h5>
+					<p class="card-text">my first project is c++ , java project <br> and is the desktop application</p>
+					<a href="#" class="btn btn-primary">Github</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-6">
+				<div class="card">
+				  <div class="card-body">
+					<h5 class="card-title">Second Project (basic web page)</h5>
+					<p class="card-text">my second project is simple web page <br>I learned the HTML, CSS, JS</p>
+					<a href="#" class="btn btn-primary">Github </a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="margin"></div>
+			<div class="row">
+			  <div class="col-sm-6">
+				<div class="card">
+				  <div class="card-body">
+					<h5 class="card-title">Third Project (Advanced web page)</h5>
+					<p class="card-text">my third project is advanced web page <br> I learned some framework sush as angular, JASON and nodeJS</p>
+					<a href="#" class="btn btn-primary">Github</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-6">
+				<div class="card">
+				  <div class="card-body">
+					<h5 class="card-title">Fourth Project (Django)</h5>
+					<p class="card-text">my fourth project is Django app <be> The django application contain the all framework that is related to web pages</p>
+					<a href="#" class="btn btn-primary">Github</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<!--ABOUT-->
+	<section class="text-white mb-0 margin" id="about">
+	  <div class="container">
+		<h2 class="text-center text-uppercase text-white">About</h2>
+		<hr class="s">
+		<div class="row">
+		  <div class="col-lg-4 ml-auto about-1" style="box-shadow: 5px 5px 5px #555555;">
+			<p class="lead">I'm a Web Developer working on Python 3.x, Using Django 2.1 for Web Development. </p>
+		  </div>
+		  <div class="col-lg-4 mr-auto about-2" style="box-shadow: 5px 5px 5px #555555;">
+			<p class="lead">Also having knowledge of HTML, CSS, Javascript for Web application design  </p>
+		  </div>
+		</div>
+		<div class="text-center mt-4">
+		  <a class="btn btn-xl btn-danger" href="/static/mypf/files/sample.pdf" download>
+			<i class="fas fa-download mr-2"></i>
+			Download CV
+		  </a>
+		</div>
+	  </div>
+	</section>
+
+{% endblock %}

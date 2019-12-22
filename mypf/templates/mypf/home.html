@@ -1,0 +1,43 @@
+{% extends 'mypf/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center margin">
+            <div class="col-5">
+                <!--Custom Api form-->
+                <form method="POST" class="form-inline">
+                    {% csrf_token %}
+                  <div class = "mt-6 "  data-aos="fade-up-right" data-aos-duration="1200">  
+                    <input type="text" name="name" class="form-control mb-2 mr-sm-2" id="name" placeholder="Enter Name">
+                      <h1></h1></div>
+                    <!-- <label class="my-1 mr-2" for="gender">Gender</label>
+                    <select name="gender" class="custom-select mb-2 mr-sm-2" id="gender">
+                        <option selected>Select</option>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                    </select>
+                    <button type="button" class="btn btn-warning mb-2 btn-sub">Generate Your</button> -->
+                    <div class="input-group mb-3" data-aos="fade-up-left" data-aos-duration="1200">
+                        <select class="custom-select" id="gender">
+                          <option selected>Gender...</option>
+                          <option value="m">male</option>
+                          <option value="f">female</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn btn-warning btn-sub" type="button">Check</button>
+                          </div>
+                      </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center margin">
+            
+        </div>
+        <div class="row justify-content-center margin">
+            <div class="col-6">
+                <img class="img-fluid" name="srcapi" id="srcapi" src="https://belikebill.ga/billgen-API.php?default=1&name=Jane Doe&sex=f">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

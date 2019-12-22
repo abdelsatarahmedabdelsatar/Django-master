@@ -1,0 +1,182 @@
+{% load static %}
+<!--loaded static files-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <style type="text/css">
+        /* CUSTOM CSS */
+
+body {
+    background-image:url(../../static/mypf/img/1.jpg);
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.s{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: #AAAAAA;
+    height: 3px;
+    width: 50%;
+}
+
+.card{
+    box-shadow: 5px 5px 5px #333333;
+}
+.im{
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.margin{
+    margin-top: 40px;
+}
+
+.home-brand{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.nav-item{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.nav-item:hover{
+    background-color:#31445f;
+    
+}
+
+header.masthead {
+    padding-top: calc(3rem + 10px);
+    padding-bottom: 3rem;
+}
+
+hr.star-dark {
+    border-color: #2c3e50;
+}
+
+hr.star-dark, hr.star-light {
+    max-width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid .25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.star-dark:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+hr.star-dark:after, hr.star-light:after {
+    position: relative;
+    top: -.8em;
+    display: inline-block;
+    padding: 0 .25em;
+    content: '\f005';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+}
+
+label {
+    color:#fff;
+}
+
+.pflink{
+    background-color:#007bff;
+    padding:5px;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-top: 0px;
+}
+
+.pflink:hover{
+    background-color:#3858f5;
+}
+
+.pflink a{
+    color: #fff;
+    font-size: 22px;
+    height: 100%;
+    display: block;
+}
+
+.pflink a:hover{
+    text-decoration: none;
+}
+
+.about-1{
+    background-color:#0070e1;
+}
+.about-2{
+    background-color:#007bff;
+}
+
+.btn-cv{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-cv:hover{
+    background-color:#0070e1;
+    border:1px solid #fff;
+    color: #fff;
+}
+
+.footer{    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    /*background-color: #2c3e50;*/
+    color: #fff;
+}
+
+
+@media (min-width: 992px){
+    header.masthead {
+        padding-top: calc(3rem + 20px);
+        padding-bottom: 3rem;
+    }
+}
+
+        
+        </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Web Programming Course</title>
+    <!--adding bootstrap, custom css and fontawesome files-->
+    <link href="{% static 'mypf/bootstrap-4/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Adding navbar -->
+    {% include 'mypf/navbar.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+    <!--Adding footer -->
+    {% include 'mypf/footer.html' %}
+    <!-- Adding custom js, bootsrap js, jquery and related script files-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="{% static 'mypf/js/jquery3.3.1.js' %}"></script>
+    <script src="{% static 'mypf/bootstrap-4/js/bootstrap.min.js' %}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'mypf/js/script.js' %}"></script>
+    <script>
+            AOS.init();
+    </script> 
+
+</body>
+</html>
